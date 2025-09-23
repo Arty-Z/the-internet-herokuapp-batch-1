@@ -7,5 +7,5 @@ test('Header verification', async ({ page }) => {
 
     await page.goto('https://the-internet.herokuapp.com/');
 
-    await homePage.validateHeader();
+    await homePage.validateHeader(); 
 })
