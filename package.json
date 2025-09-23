@@ -1,0 +1,30 @@
+{
+  "name": "the-internet-herokuapp-batch-1",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript test automation for The Internet Herokuapp",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:debug": "playwright test --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arty-Z/the-internet-herokuapp-batch-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Arty-Z/the-internet-herokuapp-batch-1/issues"
+  },
+  "homepage": "https://github.com/Arty-Z/the-internet-herokuapp-batch-1#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.55.0",
+    "@types/node": "^24.5.2",
+    "typescript": "^5.9.2"
+  }
+}
