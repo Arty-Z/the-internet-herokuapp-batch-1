@@ -9,5 +9,12 @@ test('DropDown verification', async ({ page }) => {
 
     await homePage.clickDropDownLink();
     await homePage.selectDropDownOption("Option 1");
-    await homePage.validateDropDownOptionSelected("Option 1");
+    await homePage.validateDropDownOptionSelected1("Option 1");
+
+
+    await homePage.selectDropDownOption("Option 2");
+
+
+    await homePage.validateDropDownOptionSelected2("Option 2");
+
 })

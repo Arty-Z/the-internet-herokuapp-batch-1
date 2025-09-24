@@ -20,7 +20,10 @@ export class HomePage {
         await this.dropDown.selectOption({ label: option });
 
     }
-    async validateDropDownOptionSelected(option: string): Promise<void> {
-        await expect(this.dropDown).toHaveValue("1");
+    async validateDropDownOptionSelected1(option: string): Promise<void> {
+        await expect(this.dropDown).toHaveValue(option === "Option 1" ? "1" : "2");
+    }
+    async validateDropDownOptionSelected2(option: string): Promise<void> {
+        await expect(this.dropDown).toHaveValue(option === "Option 2" ? "2" : "1");
     }
 }
