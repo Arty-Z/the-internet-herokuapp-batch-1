@@ -20,7 +20,6 @@ test('Notification Message link navigation', async ({ page }) => {
     
     await homePage.clickLinkByName('Notification Messages');
     await notificationMessagePage.validateMainHeader('Notification Message');
-    await notificationMessagePage.validateMainHeader('Action unsuccesful, please try again'); 
     await notificationMessagePage.clickOnLink();
     await notificationMessagePage.validateErrorMessage(possibleMessages);
 });

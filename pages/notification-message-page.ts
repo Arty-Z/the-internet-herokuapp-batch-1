@@ -14,7 +14,7 @@ export class NotificationMessagePage {
 
     async validateMainHeader(expectedMainHeader: string): Promise<void> {
         await expect(this.mainHeader).toBeVisible();
-        
+        await expect(this.mainHeader).toHaveText(expectedMainHeader);
     }
 
     async clickOnLink(): Promise<void> {
