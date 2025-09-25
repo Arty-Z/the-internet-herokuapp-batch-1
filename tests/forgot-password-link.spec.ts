@@ -14,7 +14,7 @@ test('Forgot Password link navigation', async ({ page }) => {
     let internalServerErrorPage = new InternalServerErrorPage(page);
     await homePage.clickLinkByName('Forgot Password');
     await forgotPasswordPage.enterEmail('arty123@gmail.com');
-    await forgotPasswordPage.clickRetrievePasswordButton();
+    await forgotPasswordPage.clickRetrievePassword();
     await internalServerErrorPage.validateErrorMessage();
 
 })
